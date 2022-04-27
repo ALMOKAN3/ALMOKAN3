@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!--html5 لتعريف المتصفح بأن لغة البرمجة هي-->
+<!--(<!-....) للتعليقات أو الملاحظات أو التفسيرات...-->
+
+
+<!--<html>هي أساس البرنامج</html>-->
+<html>
+  <!--<head>هي لا تظهر في شاشة الاستجدام</head>-->
+  <head>
+    <!--لتفهيم المتصفح بلغات و أمور أخرى-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!--لكتابة وصف الصفحة-->
+    <meta name="description" content="The start HTML"/>
+    <!--لتسمية الصفحة-->
+    <title>The_start_HTML</title>
+    <!--css لكتابة أكواد-->
+    <style></style>
+    <!--css بصفحة html لربط صفحة-->
+             <!-- <link rel="stylesheet" href=""/> -->
+    <!--java script لكتابة أكواد-->
+    <script></script>
+  </head>
+  <!--هو كل ما يظهر في الصفحة-->
+  <body>
+    <!--
+      -أي شيء نريد كتابته في الصفحة أو إضافته يسمى (عنصر)
+      -(علامة) tag تسمى html جميع أوامر لغة
+        الأوامر تقسم إلى قسمين هما:
+          1-(featuer) هي (الميزات) الأساسية و تقسم إلى قسمين هما:
+            1-الميزات التي لها فتحة و قفلة منفصلة
+            2-الميزات التي لها فتحة و قفلة من نغس العلامة
+            وهناك بعض الميزات لها تصنيفان آخران هما:
+            1-(block)و التي تعني أن العنصر يأخذ سطر كامل
+            2-(inline)و التي تعني أن العنصر لا يأخذ سطرا كاملا
+          2-(atribute) هي (الصفات) التي تلحق بالميزات وليست أساسية و إنما تستخدم في التنسيق و تقسم إلى قسمين هما:
+            1-الصفات التي تأخذ قيم
+            2-الصفات التي لا تأخذ قيم
+      -أوامر عامة:
+        1-(name) يمكن إعطاء أي ميزة اسما و يمكن أن تشترك أكثر من ميزة بنفس الاسم هذا يساعد في لفة (السي اس اس) و السيرفرات و هذه من صفات النوع الأول
+        2-(id) يمكن إعطاء أي ميزة (آيدي) و يمكن أن تشترك أكثر من ميزة بنفس(الآيدي) هذا يساعد في لغة (السي اس اس) و السيرفرات و هذه من صفات النوع الأول
+      -(px) البكسل هي واحدة قياس (الطول) و (العرض) و (الحجم)
+    -->
+
+    <!--
+      للتعديل على حجم الخط من 1 إلى 6 من الأكبر إلى الأصغر و هم ميزات من النوع الأول
+    -->
+    <h1>Abdulrhman</h1>
+    <h2>Abdulrhman</h2>
+    <h3>Abdulrhman</h3>
+    <h4>Abdulrhman</h4>
+    <h5>Abdulrhman</h5>
+    <h6>Abdulrhman</h6>
+    <!--
+      لوضع خط فاصل و هي ميزة من النوع الثاني
+    -->
+    <hr>
+    <!--
+      (p)لكتابة نص و هي ميزة من النوع الأول تعطي النص حجم 16 بكسل وهي (بلوك)
+      (br)لبدء صطر جديد و هي ميزة من النوع الثاني
+      (strong)لجعل الكلمة بالخط العريض و هي تعبر عن الأهمية و هي ميزة من النوع الأول
+      (b)لجعل الكلمة بالخط العريض و هي ميزة من النوع الأول
+      (em)لجعل الكلمة بخط مائل و تعبر عن الكتابة الجديدة و هي ميزة من النوع الأول
+      (i)لجعل الكلمة بخط مائل و هي ميزة من النوع الأول
+      (ins)لوضع خط تحت الكلمة و تعبر عن الأهمية و هي ميزة من النوع الأول
+      (u)لوضع خط تحت الكلمة و هي ميزة من النوع الأول
+      (del)لوضع خط على الكلمة و تعبر حذف أو تخفيض و هي ميزة من النوع الأول
+      (s)لوضع خط على الكلمة و هي ميزة من النوع الأول
+      (sup)لجعل العنصر مرتفع عن السطر و هي ميزة من النوع الأول
+      (sub)لجعل العنصر منخفض عن السطر و هي ميزة من النوع الأول
+      (mark)لتحديد الكلمة بلون و هي ميزة من النوع الأول
+    -->
+    <p>
+      Text to HTML<br>
+      <strong>NOTE</strong>: If you're <i>looking</i> to <em>convert</em>
+      a word doc into html code then you probably want to <ins>check out</ins>
+      the <u>Word to HTML</u> <s>tool</s> <del>instead</del>.
+      This free online word <b>converter</b> tool will take plain text
+      <mark>contents</mark> and convert the word text into HTML code.
+      Convert plain text from an <sup>email</sup>, a .txt <sub>file</sub> or
+      any similar text source into html code that can be published on a web
+      page.
+    </p>
+    <hr>
+    <!--
+      (lebal) = (p)
+    -->
+    <lebal>My name's Abdulrhman</lebal>
+    <hr>
+    <!--
+      تأخذ صفات للتغير على الكلام و هي من الميزات من النوع الأول
+        من الصفات التي تأخذها:
+          1-(color)لتفير لون العنصر و هي من صفات النوع الأول
+          2-(size)لتغير حجم العنصر و هي من صفات النوع الأول
+          3-(face)لتغير نوع الخط و هي من صفات النوع الأول
+    -->
+    <font color="red" size="5" face="arial"><center>Abdulrhman</center></font>
+    <hr>
+    <!--
+      (div) = (p) = (lebal)
+      (align)لتغير مكان النص في الصفحة و هي من صفات النوع الأول
+        القيم التي تأخذها:
+        1-(left)لوضع العنصر في يسار الصفحة
+        2-(center)لوضع العنصر في منتصف الصفحة
+        3-(right)لوضع العنصر في يمين الصفحة
+      (dir)لتغير كتابة العناصر و هي من صفات النوع الأول
+        القيم التي تأخذها:
+        1-(ltr)لجعل الكتابة من اليسار إلى اليمين
+        2-(rtl)لجعل الكتابة من اليمين إلى اليسار
+    -->
+    <div align="right" dir="rtl">السلام علتكم Ahmed</div>
+    <hr>
+    <!--
+      لعمل جدول وهي من ميزات النوع الأول وهي (بلوك)
+        تأخذ ثلاث ميزات من النوع الأول هم:
+        1-(thead)و تعبر عن رأس الجدول دائما
+        2-(tbody)و تعبر عن وسط الجدول دائما
+        3-(tfoot)و تعبر عن آخر الجدول دائما
+        لإنشاء صفوف و أعمدة نستخدم الميزات من النوع الأول:
+        1-(tr)لإنشاء الصفوف
+          الصفات الملحقة بالصفوف من النوع الأول:
+          (rowspan)لدمج الصفوف
+        2-(th)لإنشاء الأعمدة الرأسية
+        3-(td)لإنشاء أعمدة عادية
+          الصفات الملحقة بالأعمدة من النوع الأول:
+          (colspan)لدمج الأعمدة
+        الصفات الملحقة بالجدول من النوع الأول:
+          1-(border)لإظهار الحدود
+          2-(bgcolor)لتغير لون خلفية الجدول
+    -->
+    <table border="1">
+      <thead bgcolor="aqua">
+        <tr align="center"><th>number</th><th>name one</th><th>name two</th><th>money</th><th>id</th></tr>
+      </thead>
+      <tbody bgcolor="blue">
+        <tr align="center"><td>1</td><td colspan="2">Ahmed</td><td>1000$</td><td>3597</td></tr>
+        <tr align="center"><td>2</td><td colspan="2">khaled</td><td rowspan="2">500$</td><td>3598</td></tr>
+        <tr align="center"><td>3</td><td colspan="2">Hasan</td><td>3599</td></tr>
+      </tbody>
+      <tfoot bgcolor="yellow">
+        <tr align="center"><td colspan="3">3</td><td>1500$</td><td>----</td></tr>
+      </tfoot>
+    </table>
+    <hr>
+    <!--
+      لوضع رابط صفحة ما و هي من ميزات النوع الأول
+        الصفات التي تأخذها من النوع الأول:
+          1-(href)لوضع امتداد الصفحة
+          2-(target)لوضع الطريقة التي تفتح الصفحة بها
+            القيم التي تأخذها:
+            1-(_self)لفتح الرابط في نفس الصفحة
+            2-(_blank)لفتح الرابط في صفحة أخرى
+    -->
+    <a href="https://www.youtube.com" target="_blank">youtube</a><br>
+    <a href="The_start_CSS_by_HTML.html">The_start_CSS_by_HTML</a><br>
+    <hr>
+    <!--
+      لوضع صورة و هي من ميزات النوع الثاني
+        الصفات التي تأخذها من النوع الأول:
+          1-(src) = (href)
+          2-(alt)لكتابة الكلام الذي سوف يظهر بدل الصورة إذا حدث خطأ
+          3-(width)لتحديد العرض
+          4-(height)لتحديد الطول
+          5-(border)
+    -->
+    <img src="Accessories/Photo/sharingan3.png" alt="nothing"/>
+    <img src="Accessories/Photo/sharingan1.jpg" alt="nothing" width="220px" border="2"/>
+    <hr>
+    <!--
+      لوضع فيديو و هي من ميزات النوع الأول
+        الصفات التي تأخذها من النوع الأول:
+          1-(src)
+          2-(width)
+          3-(height)
+          4-(preload)لتحميل الفيديو لكي لا ينقطع
+            لبقيم التي يأخذها:
+            1-(auto)تحميل تلقائي
+            2-(metadata)تحميل عند التشغيل
+            3-(none)عدم التحميل
+          5-(poster)لوضع صورة في واجهة الفيديو
+        الصفات التي تأخذها من النوع الثاني:
+          1-(controls)لإظهار ملحقات الفيديو
+          2-(muted)لكتم صوت الفيديو
+          3-(autoplay)لتشغيل الفيديو تلقائيا
+    -->
+    <video src="Accessories/Video/HunterVideo.mp4" width="400px" controls muted preload="metadata" autoplay poster=""></video>
+    <hr>
+    <!--
+      لوضع صوت و هي من ميزات النوع الأول
+        الصفات التي تأخذها من النوع الأول:
+          1-(src)
+          2-(preload)لتحميل الفيديو لكي لا ينقطع
+            لبقيم التي يأخذها:
+            1-(auto)تحميل تلقائي
+            2-(metadata)تحميل عند التشغيل
+            3-(none)عدم التحميل
+        الصفات التي تأخذها من النوع الثاني:
+          1-(controls)لإظهار ملحقات الفيديو
+          2-(muted)لكتم صوت الفيديو
+          3-(autoplay)لتشغيل الفيديو تلقائيا
+    -->
+    <audio src="Accessories/Sound/HunterSound.mp3" controls muted preload="metadata" autoplay></audio>
+    <hr>
+    <!--
+    لوضع ملف و صفحة ويب داخل الصفحة و هي من ميزات النوع الثاني
+      الصفات التي تأخذها من النوع الأول:
+        1-(src)
+        2-(width)
+        3-(height)
+    -->
+    <embed src="Accessories/File/qoraan.pdf" height="490px" width="50%"/><br>
+    <hr>
+    <!--
+      لوضع (صورة و فيديو و صوت و ملف) من الجهاز أو من تطبيق على الانترنيت و هي من ميزات تانوع الأول
+        الصفات التي تأخذها من النوع الأول:
+          1-(src)
+          2-(width)
+          3-(height)
+    -->
+    <iframe src="Accessories/Photo/HunterPhoto.jpg" width="225px"   height="225px"></iframe>
+    <iframe src="Accessories/Video/HunterVideo.mp4" width="225px" height="225px"></iframe>
+    <iframe src="Accessories/Sound/HunterSound.mp3" width="225px" height="225px"></iframe>
+    <iframe src="Accessories/File/qoraan.pdf" width="225px" height="225px"></iframe>
+    <iframe
+      width="604" height="340" src="https://www.youtube.com/embed/q3yFo-t1ykw"
+      title="YouTube video player"         frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"       allowfullscreen >
+    </iframe>
+    <hr>
+    <!--
+      لإنشاء قائمة و هي من ميزات النوع الأول
+      وهي من ميزات النوع الأول(li)من أجل إدراج عنصر في القائمة نستخدم الميزة
+        الصفات التي تأخذها من النوع الأول:
+        1-(type) من أجل تغير تلرقيم أو شكل الترقيم
+          القيم التي تأخذها:
+          1-(1) للأرقام
+          2-(a) للأحرف الإنكليزية الصغيرة
+          3-(A) للأحرف الإنكليزية الكبيرة
+          4-(i) للأحرف اللاتينية الصفيرة
+          5-(I) للأحرف اللاتينية الكبيرة
+    -->
+    <ol type="I">
+      <li>Ahmed</li>
+      <li>Omar</li>
+      <li>Mohamed</li>
+    </ol>
+    <hr>
+    <!--
+      لإنشاء قائمة و هي من ميزات النوع الأول
+      وهي من ميزات النوع الأول(li)من أجل إدراج عنصر في القائمة نستخدم الميزة
+        الصفات التي تأخذها من النوع الأول:
+        1-(type)
+          القيم التي تأخذها:
+          1-()
+          2-(disc)
+          3-(square)
+          4-()
+          5-()
+    -->
+    <ul type="square">
+      <li>Ahmed</li>
+      <li>Omar</li>
+      <li>Mohamed</li>
+    </ul>
+    <hr>
+    <!--
+    لإنشاء قائمة و هي من ميزات النوع الأول
+    و هي من ميزات النوع الأول (dt) لإنشاء عنوان (سؤال) نستخدم
+    و هي من ميزات النوع الأول(dd) من أجل إدراج عنصر من القائمة نستخدم الميزة
+    -->
+    <dl>
+      <dt>How your old?</dt>
+      <dd>smaller than 18</dd>
+      <dd>smaller than 40 and bigger than 18</dd>
+      <dd>bigger than this</dd>
+    </dl>
+    <hr>
+    <!--
+      لإنشاء قائمة مضغوطة و هي من ميزات النوع الأول
+      و هي من ميزات النوع الأول (summary) من أجل تسمية القائمة نستخدم
+    -->
+    <details>
+      <summary>title</summary>
+        <p>A1</p>
+        <p>A2</p>
+        <p>B1</p>
+    </details>
+    <hr>
+    <!--
+      لإنشاء زر و هي من ميزات النوع الأول
+        الصفات التي تأخذها من النوع الأول:
+        1-(type)
+          القيم التي تأخذها:
+          1-(button) زر عادي
+          2-(reset) زر إعادة التشغيل
+          3-(submit) زر القبول
+    -->
+    <button type="reset">click here</button><br>
+    <hr>
+    <!--
+     لدمج الميزات التي في داخلها لكي ترجع قيمة إلى السيرفر
+    -->
+    <form>
+    <!--
+      هي من ميزات النوع الثاني و لها استخدامات عدة
+        الصفات التي تأخذها من النوع الأول:
+        1-(type)
+          القيم التي تأخذها:
+          1-(text) للنصوص يمكن للمستخدم الكتابة عليها و لكن لا يمكنه تغير حجمها
+          2-(email) للحسابات
+          3-(password) لكلمات السر
+          4-(tel) لأرقام الهواتف
+          5-(numder) للأرقام
+          6-(button) للأزرار العادية
+          7-(submit) لأزرار الموافقة
+          8-(reset) لأزرار إعادة التشغيل
+          9-(radio) للإختيارات
+          10-(checkbox) للتأكيد على الإختيار
+        2-(value) لكتابة عناصر داخل الميزة و لكن يمكن التعديل عليها من قبل المستخدم أو لإعطاء الميزة قيمة
+        3-(placeholder) لكتابة عناصر داخل الميزة و لكن لا يمكن التعديل عليها من قبل المستخدم
+    -->
+      <input type="text" placeholder="text"/><br>
+      <input type="email" value="gmail"/><br>
+      <input type="email" placeholder="gmail"/><br>
+      <input type="password" placeholder="password"/><br>
+      <input type="tel" placeholder="phone number"/><br>
+      <input type="numder" placeholder="any number"/><br>
+      <input type="button" value="click here"/><br>
+      <input type="submit"/><br>
+      <input type="reset"/><br>
+    </form>
+    <hr>
+    <form>
+      <h1>What is your gender?</h1>
+      <lebal>male</lebal>
+        <input type="radio" value="male" name="a"/>
+      <lebal>fmale</lebal>
+        <input type="radio" value="fmale" name="a"/>
+      <input type="checkbox" checked/>are you sure?
+      <input type="submit"/>
+    </form><br>
+    <hr>
+    <!--
+      للنصوص و يمكن للمستخدم الكتابة عليها و تغير حجمها
+    -->
+    <textarea></textarea>
+    <hr><br><hr><br><hr><br><hr><br><hr>
+  </body>
+</html>

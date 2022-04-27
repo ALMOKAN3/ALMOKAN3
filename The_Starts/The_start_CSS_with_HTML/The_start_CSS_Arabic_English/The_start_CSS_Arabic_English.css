@@ -1,0 +1,576 @@
+/*(/**.) to coments (للملاحظات)*/
+
+/*            to             call               up            */
+
+  /*
+    to coordenat any type write name the type for open curly braces
+    (لتنسيق أي سمة اكتب اسم السمة ثم افتح الأقواس المجعدة)
+  */
+
+  /*
+    to write tow coordenat or more put a semicolon (;) after all coordenat (لكتابة تنسيقين أو أكثر ضع فاصلة منقوطة بعد كل سمة)
+  */
+
+  /*
+    to add any value to any type found put (:) (لإضافة قيمة لأي سمة يجب وضع النقطتين)
+  */
+
+  /*
+  p{
+    color:green;
+  }
+  */
+
+  /*
+    to determine definite type add to type name by (class)
+    (لتحديد سمة محددة نضيف للسمة اسما بواسطة (الكلاس))
+    to call up type using class put point (.) befor name the class it to open the curly braces
+    (لاستدعاء سمة باستخدام الفئة نضع نقطة قبل اسم فئتها ثم نفتح الأقواس المجعدة)
+  */
+
+  /*
+    can be give tow type or more same name
+    (يمكن إعطاء سمتين أو أكثر الاسم نفسه)
+  */
+  .test{
+    color:#3aff00;
+  }
+  .test1{
+    color:red;
+  }
+  /*
+    to determine definite type add to type name by (id)
+    (لتحديد سمة محددة نضيف للسمة اسما بواسطة (الآي دي))
+  */
+
+  /*
+    to call up type using id put (#) befor name the id it to open the curly braces
+    (لاستدعاء سمة باستخدام الآي دي نضع هاشتاق قبل اسم الآي دي خاصتها ثم نفتح الأقواس المجعدة)
+  */
+
+  /*
+    can be give tow type or more same name
+    (يمكن إعطاء سمتين أو أكثر الاسم نفسه)
+  */
+  #name1{
+    color:#fff000;
+  }
+  /*
+    to determine definite type can be put it in other type and call up two type and put space between them to open curly braces
+    (لتحديد سمة محددة يمكن وضعها داخل سمة آخرى واستدعاء السمتين ووضع مسافة بينهما ثم فتح الأقواس المجعدة)
+  */
+
+  /*
+    can be give tow type or more same name
+    (يمكن إعطاء سمتين أو أكثر الاسم نفسه)
+  */
+  div p{
+    color:#df9bc0ce;
+  }
+  input{
+    color:red;
+  }
+  /*
+    to call up definite (input) write (input) to open square btackets withoit leaving a space between them to open curly braces
+    (لإستدعاء (انبوت) محددة نكتب (انبوت) ثم نفتح الأقواس المربعة دون ترك مسافة بينهما ثم فتح الأقواس المجعدة)
+  */
+
+  /*
+    in the square btackets write the atribute that point on output element
+    (في الأقواس المربعة نكتب الصفة التي تؤشر على العنصر المخرج)
+  */
+  input[type = "button"]{
+    background:green;
+    color:blue;
+
+  }
+
+/*                 to                   border                */
+
+  /*
+    to make border to any feature using (border) that taking three values:
+    (لجعل حدود لأي سمة نستخدم (بوردر) الذي يأخذ ثلاث قيم):
+    1-(width) to determine width the border
+      (لتحديد عرض الحد)
+    2-(color) to determine color the border
+      (لتحديد لون الحد)
+    3-(style) to determine style the border
+      (التحديد شكل الحد)
+    must write minus (-) between feature (border) and the atribute
+    (يجب كتابة (-) بين السمة (بوردر) و الصفة)
+  */
+  .z{
+    width:100;
+    height:100;
+    background:aqua;
+
+    border-width:10;
+    border-color:black;
+    border-style:solid;
+  }
+  /*
+    can be write the three values without write the name atirbute after border to leaving break between each value and the ather but must write (px) after value to width
+    (يمكن كتابة الثلاث قيم دون كتابة اسم الصفة بعد (بوردير) بترك فاصل بين كل قيمة وأخرى ولكن يجب كتابة (بيكسل) بعد قيمة العرض)
+  */
+  .y{
+    height:100;
+    width:100;
+    background:orange;
+
+    border:12px black double;
+  }
+
+/*               to                  featuers                 */
+
+  /*
+    (color) to change color the text (لتغير لون النص)
+    (height) to change height border (لتغير طول الحد)
+    (width) to change width borded (لتغير عرض الحد)
+    (background) to change color to background (لتغير لون الخلفية)
+    (style) to change style line (لتغير نوع الخط)
+    (font-family) to change style line (لتغير نوع الخط)
+    (font-size) to change size line (لتغير حجم الخط)
+      the values that taking (font-size) (القيم التي تأخذها هي):
+      1-(smaller)      2-(small)         3-(x-small)
+      4-(xx-small)     5-(medium)        6-(large)
+      7-(larger)       8-(x-large)       9-(xx-large)
+    (font-weight) to change thick line (لتغير سماكة الخط)
+      the values that taking (font-weight) (القيم التي تأخذها هي):
+      1-(lighter)      2-(normal)         3-(blod)
+      4-(bloder)       5-(inherit)
+      of (100) to (900)
+    (line-height) to change distance between the lines (لتغير المسافة بين الأسطر)
+    (letter-spacing) to change distance between the letter (لتغير المسافة بين الأحرف)
+    (text-align) to change space the talk in page (لتغير مكان الكلام في الصفحة)
+      the values that taking (text-align) (القيم التي تأخذها):
+      1-(center)        2-(right)         3-(left)
+    (direction) to change direction talk (لتغير اتجاه الكلام)
+      the values that taking (direction) (القيم التي تأخذها):
+      1-(rtl) right to left (من اليمين إلى اليسار)
+      2-(ltr) left to right (من اليسار إلى اليمين)
+  */
+  div h1{
+    font-family:Monospace;
+    font-size:50px;
+    font-weight:900;
+  }
+  #p{
+    line-height:20px;
+    letter-spacing:5px;
+  }
+  #p1{
+    text-align:right;
+    direction:rtl;
+  }
+  /*
+    (background-color) to change the color of background
+      (لتغير لون الخلفية)
+      taking six values that basic colors (تأخذ ست قيم هي الألوان الأساسية):
+      (1&2) to color red  (3&4) to color green  (5&6) to color blue
+      ((1&2) للون الأحمر
+       (3&4) للون الأخضر
+       (5&6) للون الأزرق
+      (ff) this the greatest value (هي القيمة العظمى)
+    (background-color-rgb) to change a color of background
+      (لتغير لون الخلفية)
+      taking three value (تأخذ ثلاث قيم)
+      1- to red color (للون الأحمر)
+      2- to green color (للون الأخضر)
+      3- to blue color (للون الأزرق)
+      (255) this the greatest value (هي القيمة العظمى)
+    (background-color-rgba) = (background-color-rgb) + one value other
+        (قيمة واحدة أخرى هي):
+        (Transparency) (الشفافية)
+        the greatest value this (1) and the litle value (0)
+        (القيمة العظمى هي (1) القيمة الدنيا (0))
+  */
+  #div{
+    height:200px;
+    width:200px;
+    border:5px black double;
+    background-color:rgb(255, 0, 0);
+  }
+  #div1{
+    height:200px;
+    width:200px;
+    border:5px black double;
+    background-color:rgba(20, 100, 70, 0.5);
+  }
+  #div2{
+    height:200px;
+    width:200px;
+    border:5px black double;
+    background-color:#00ff00;
+  }
+  /*
+    (padding) to edit the inner borders (للتعديل على الحدود الداخلية)
+      the featuers that taking (الصفات التي تأخذها):
+      1-(-top) to top inner (للحد العلوي)
+      2-(-right) to right inner (للحد الأيمن)
+      3-(-bottom) to bottom inner (للحد السفلي)
+      4-(-left) to left inner (للحد الأيسر)
+      when using (padding) and not use any featuer is the value that put to change to all featuers (عند استخدامها دون أي صفة تكون القيمة التي توضع للتغيير لكل الصفات)
+      when put tow values is the one value to (top & bottom) and is the tow value to (right & left) (عند وضع قيمتين تكون القيمة الأولى لل(الأعلى والأسفل) و تكون القيمة الثانية لل(اليمين واليسار))
+      if you wanted write all values in one line, you should write four values as follows (إذا أردت كتابة كل القيم في سطر واحد يجب عليك كتابة أربع قيم على النحو التالي):
+              (top --> right --> bottom --> left)
+      the values that taking (القيم التي تأخذها):
+      1-(px) (البكسل)
+      2-(%) (بالمئة)
+  */
+  #divpadding1{
+    border:5px black solid;
+    padding-top:10px;
+    padding-right:20px;
+    padding-bottom:25px;
+    padding-left:15px;
+  }
+  #divpadding2{
+    border:5px black solid;
+    padding:10px;
+  }
+  #divpadding3{
+    border:5px black solid;
+    padding:10px 5px;
+  }
+  #divpadding4{
+    border:5px black solid;
+    padding:10px 30px 26px 17px;
+  }
+  /*
+    (margin) = (padding) but (لاكن):
+      (margin) to edit the outer borders (للتعديل عاى الحدود الخارجية)
+      accepte minus values (تقبل القيم السالبة)
+  */
+  #divmargin1{
+    border:5px black solid;
+    margin-left:-10px;
+  }
+  /*
+    in most browsers is here show margins in order to remove its you do to set all elements and change the margins (في معظم المتصفحات يكون هناك حواف ظاهرة من أجل حذفها تقوم بتحديد كل العناصر و نغير الحواف)
+    to set all elements you do to put (*) for open curly braces (لتحديد كل العناصر قم بوضع (*) ثم افتح الأقواس المجعدة)
+  */
+  *{
+    margin:0;
+  }
+  /*
+    to edit the line link using (text-decoration) (للتعديل على خط الرابط نستخدمها)
+      the values that taking (القيم التي تأخذها):
+      1-(underline) to put the line under the link and it is basic (لوضع الخط تحت الرابط وهي الأساسية)
+      2-(overline) to put the line over the link (لوضع الخط فوق الرابط)
+      3-(line-through) to put the line in the link (لوضع الخط على الرابط)
+      4-(none) to not ths line (لعدم وضع الخط)
+    (cursor) to change from pointer (لتغير شكل المؤشر)
+  */
+  a{
+    text-decoration:line-through;
+    color:#b300ff;
+    cursor:nw-resize;
+  }
+  /*
+    (..:hover) to change when put the pointer in think (للتغير عند وضع المؤشر على الشيئ)
+  */
+  a:hover{
+    color:blueviolet;
+  }
+  /*
+    the (block) elements taking any featuer but the (inline) elements not taking any featuer (العناصر (بلوك) تأخذ أي صغة لكن العناصر (في السطر) لا تأخذ أي صغة)
+    sach as (مثل):
+      1-(height)                 2-(width)
+      3-(top & bottom in padding & margin)
+    to solve this problem using (display) (لحل هذه المشكلة نستخدمها)
+    the values that taking (القيم التي تأخذها):
+      1-(block)           2-(inline)
+      3-(inline-block) taking qualitys to (inline) in the line and taking qualitys to (block) in all think (تأخذ خواص الثانية في السطر وتأخذ خواس الأولى في كل شيئ)
+  */
+  #divdisplay1{
+    background-color:orangered;
+    width:100px;
+    height:20px;
+    padding-top:20px;
+    margin-bottom:20px;
+    display:inline-block;
+  }
+  #spandisplay{
+    background-color:darkblue;
+    width:40px;
+    height:20px;
+    padding-top:50px;
+    margin-bottom:50px;
+    display:inline-block;
+  }
+  /*
+    (display) taking ather value (تأخذ قيمة أخرى):
+      4-(none) to hiding the all line (لإخفاء كل السطر)
+    (visibility) to show and hide but to hiding the words only (للإظهار والإخفاء لكن لإخفاء الكلمات فقط)
+      the values that taking (القيم التي تأخذها):
+      1-(visibile) to show and it is basic (للإظهار وهي الأساسية)
+      2-(hidden) to hiding (للإخغاء)
+  */
+  #divdisplay2{
+    display:none;
+  }
+  #divvisibility{
+    visibility:hidden;
+  }
+  /*
+    (overflow) to control to the increases on size text (للتحكم في الزيادات على حجم النص)
+      the values that taking (القيم ااتي تأخذها):
+      1-(visibile) to show the increases and it is basic (لإظهار الزيادات و هي الأساسية)
+      2-(hidden) to hiding the increases (لإخفاء الزيادات)
+      3-(scroll) to make scroll to increases (لجعل قائمة للزيادات)
+  */
+  #divoverflow{
+    width:200px;
+    height:200px;
+    background-color:darkred;
+    overflow:scroll;
+  }
+  /*
+    (float) to make the (block) element to (inline) element (لجعل العنصر (بلوك) للعنصر (في السطر))
+    but it is make the element outside work (لكن هي تجعل العنصر خارج إطار العمل)
+    to save that problem using (clear) that make the featuer gliding between the featuer and make its inside work (لحل هذه المشكلة نستخدم (كلير) التي تجعل السمة تنساب بين السمات الأخرى و تجعلها داخل إطار العمل)
+  */
+  #divfloat div{
+    float:right;
+    width:10%;
+    height:20px;
+    /*clear:both;*/
+    background-color:#284839;
+    color:aqua;
+  }
+  #divfloat{
+    background-color:darkred;
+    width:100%;
+    height:20px;
+  }
+  #pclear{
+    clear:left;
+  }
+
+/*                 to                     photo                */
+
+  /*
+    (background-image) to images (للصور)
+      using (url) to (background-image) to write extension the images (لكتابة امتداد الصور)
+      from (url) (url(""))
+    (background-size) to change size the images (لتغير حجم الصور)
+      the values that taking (القيم التي تأخذها):
+      1-(auto) and it is basic
+      2-(cover) to make image tall = border tall only (لجعل طول الصورة يساوي طول الحواف فقط)
+      3-(contan) to make image tall real (لجعل طول الصورة الحقيقي)
+      4- to using (px) (باستخدام البكسل)
+    (background-repeat) to control to repeat (للتحكم بالتكرار)
+      the values that taking (القيم التي تأخذها):
+      1-(repeat) to repeat and it is basic (للتكرار وهي الأءاسية)
+      2-(no-repeat) to not repeat (لعدم التكرار)
+      3-(repeat-x) to repeat horizontally (للتكرار أفقيا)
+      4-(repeat-y) to repeat vertically (للتكرار شاقوليا)
+    (background-attachment) to moving the image over border (لتحريك الصورة خلال الإطار)
+      the values that taking (القيم ااتي تأخذها):
+      1-(scroll) to not move its and it is basic (لعدم تحريكها وهي الأساسية)
+      2-(fixed) to move its (لتحريكها)
+    (background-position) to change place the image (لتغير مكان الصورة)
+      it is taking two basic values (إنها تأخذ قيمتين أساسيتين):
+      1- and that taking (left || center || right || px) to change the horizontally (لتغير الأفق)
+      2- and that taking (top || center || bottom || px) to change the vertically (لتغير الشاقول)
+  */
+  #divphoto{
+    height:200px;
+    width:200px;
+    border:5px black solid;
+
+    background-color:yellow;
+    background-image:url("Accessories/Photo/sharingan1.jpg");
+    background-size:200px 200px;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-position:center center;
+  }
+
+/*                 to                   lists                 */
+
+  /*
+    (list-style-type) = (list-style) to change the numbering (لتغير الترقيم)
+      the values that taking (القيم التي تأخذها):
+      1-(disc) = (inherit) and it is basic (الدائرة المغلقة وهي الأساسية)
+      2-(circle) (الدائرة المفتوحة)       3-(square) (المربع)
+      4-(decimal)    5-(decimal-leading-zero)
+      6-(lower-roman)   7-(lower-greek)
+      8-(lower-latin)    9-(lower-alpha)
+      10-(upper-roman)  11-(upper-latin)
+      12-(upper-alpha)  13-(armenian)
+      14-(georgian)     15-(none) (لاشيئ)
+    (list-style-image) to add photo change numbering (لإضافة صورة بدل الترقيم)
+    (list-style-position) to combine or break or delete the numbering to the list (لدمج أو فصل أو حذف الترقيم عن القائمة)
+      the values that taking (القيم التي تأخذها):
+      1-(outside) to break and it is basic (للفصل وهي الأساسية)
+      2-(inside) to combine (للدمج)
+      3-(none) to delete (للحذف)
+  */
+  ul{
+    list-style-type:lower-greek;
+    /*list-style-image:;*/
+    /*list-style:lower-roman;*/
+    list-style-position:inside;
+    background-color:gray;
+  }
+  ul li{
+    background-color:purple;
+    width:100px;
+  }
+
+/*               to                   position                */
+
+  /*
+    (position) to change the place element in the page (لتغير مكان العنصر في الصفحة)
+      the values that taking (القيم التي تأخذها):
+      1-(static) it is not change any think and its the basic (هي لا تغير أي شيء و هي الأساسية)
+      2-(relative) to change place element + save the old place and allow infringement to other elements (لتغير مكان العنصر + حفظ مكانه القديم و تسمح بالتعدي على العناصر الأخرى)
+      3-(fixed) to change place element and make move with the user in specific case + save the old place and allow infringement to other elements (لجعل العنصر يتحرك مع المستخدم في حالات خاصة + حفظ المكان القديم و تسمح بالتعدي على العناصر الأخرى)
+      4-(sticky) = (fixed)
+        the values that taking (2 + 3 + 4) (القيم التي تأخذها):
+        1-(top) to up (للأعلى)
+        2-(right) to right (لليمين)
+        3-(bottom) to down (للأسفل)
+        4-(left) to left (لليسار)
+      to connect between dadelement and element must than be the dadelement (position:relative;)
+  */
+  #divposition1{
+    background-color:red;
+    position:static;
+  }
+  #divposition2{
+    background-color:blue;
+  }
+  #divposition3{
+    background-color:red;
+    position:relative;
+    top:10px;
+  }
+  #divposition4{
+    background-color:red;
+    position:absolute;
+    left:80%;
+  }
+  #divposition44{
+    background-color:red;
+    position:absolute;
+  }
+  #divdadtodivpositoin4{
+    width:200px;
+    height:50px;
+    position:relative;
+    border:3px black solid;
+  }
+  #divposition5{
+    background-color:red;
+    position:fixed;
+    top:0;
+    left:90%;
+  }
+  #divdadtodivpositoin5{
+    width:200px;
+    height:500px;
+    border:3px black solid;
+    position:relative;
+  }
+  #divposition6{
+    background-color:red;
+    width:30%;
+    position:sticky;
+    bottom:0;
+    left:90%;
+  }
+
+/*     to     pseudoelment       and       pseudoclasses       */
+
+  /*
+    (visited) to change any think in element when vist the link (لتغير أي شيء في العنصر عند زيارة الرابط)
+    (checkbox) to change any think in the checkbox when squeese to its (لتغير أي شيء في الشكبوكس عند الضغط عليه)
+      (opacity) to change the Transparency (لتغير الشفافية)
+    (focus) to change the border to the inpugtext (لتغير حدود النص انبوت)
+    (first-letter) to change any think the first letter in any text (لتغير أي شيء في الحرف الأول في أي نص)
+    (first-line) to change any think the first line in any text (لتغير أي شيء في السطر الأول في أي نص)
+    (selection) to change any think in selection (لتغير أي شيء في التحديد)
+    (after) to add content after any think (لإضافة محتوى بعد أي شيء)
+    (before) to axx content before any think (لإضافة محتوى قبل أي شيء)
+      the basic value that taking (after & befors) (القيمة الأساسية التي تأخذانها):
+      (content) to write the content (لكتابة المكتوى)
+    to add any pseudoclasses or pseudoelment must put (:) between the featuer and the pseudoclasses or pseudoelment (لإضافة إحداهما يجب وضع (:) بين السمة و إحداهما)
+    to make the pseudoclasses or the pseudoelment public must put (::) before them (لجعل إحداهما عامة يجب وضع (::) قبلهما)
+  */
+  #divpseudoelement-and-pseudoclasses{
+    border:5px #000 solid;
+    width:98%;
+    height:450px;
+  }
+  a{
+    text-decoration:none;
+  }
+  a:visited{
+    color:black;
+  }
+  input[type = "checkbox"]:checked{
+    opacity:0;
+  }
+  #inputtext1:focus{
+    color:purple;
+  }
+  #inputtext2:focus{
+    outline:none;
+    border:2px blueviolet solid;
+  }
+  #ppseudoelements{
+    color:black;
+  }
+  #ppseudoelements:first-letter{
+    color:red;
+    font-size:20px;
+  }
+  #ppseudoelements:first-line{
+    color:blue;
+  }
+  ::selection{
+    color:white;
+    background-color:black;
+  }
+  #pafterbefore{
+    width:70%;
+    background-color:black;
+    padding:10px;
+    position:relative;
+  }
+  #pafterbefore:after{
+    content:"thier";
+    color:red;
+  }
+  #pafterbefore:before{
+    content:"";
+    height:100%;
+    width:5px;
+    background-color:blue;
+    position:absolute;
+    left:0;
+    top:0;
+  }
+
+/*                to                   @media                 */
+
+  /*
+    #centermedia{
+      display:inline-block;
+      background-color:red;
+    }
+    @media screen and (max-width:100px;){
+      #centermedia{
+      display:block;
+      background-color:green;
+      }
+    }
+    @media screen and (min-width:100px;) and (max-width:400px;){
+
+    }
+    @media screen and (min-width:400px;) anx (max-width:600px){
+
+    }
+  */

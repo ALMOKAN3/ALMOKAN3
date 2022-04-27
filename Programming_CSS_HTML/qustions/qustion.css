@@ -1,0 +1,28 @@
+form{
+  border:2px black solid;
+  width:50%;
+  margin-left:25%;
+}
+h1{
+  font-size:100px;
+  color:darkgray;
+  margin-left:35%;
+  margin-bottom:20px;
+}
+li{
+  font-size:20px;
+}
+ol[type = "a"]{
+  margin-bottom:10px;
+  list-style-position:inside;
+}
+input[type = "submit"]{
+  margin-left:40%;
+  width:100px;
+  height:20px;
+  font-size:13px;
+  color:darkred;
+}
+*{
+  margin:0;
+}

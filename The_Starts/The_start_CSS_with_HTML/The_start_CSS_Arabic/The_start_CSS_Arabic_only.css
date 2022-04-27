@@ -1,0 +1,558 @@
+/* (/**.) للملاحظات */
+
+/*            to             call               up            */
+
+
+  /*
+   لتنسيق أي سمة اكتب اسم السمة ثم افتح الأقواس المجعدة
+  */
+
+  /*
+    لكتابة تنسيقين أو أكثر ضع فاصلة منقوطة (؛) بعد كل سمة
+  */
+
+  /*
+    (لإضافة قيمة لأي سمة يجب وضع النقطتين)
+  */
+
+  /*
+    p{
+      color:green;
+    }
+  */
+
+  /*
+    لتحديد سمة محددة نضيف للسمة اسما بواسطة (الكلاس)
+     لاستدعاء سمة باستخدام (الكلاس) نضع نقطة (.) قبل اسم فئتها ثم نفتح الأقواس المجعدة
+     يمكن إعطاء سمتين أو أكثر الاسم نفسه
+  */
+  .test{
+    color:#3aff00;
+  }
+  .test1{
+    color:red;
+  }
+  /*
+    (لتحديد سمة محددة نضيف للسمة اسما بواسطة (الآي دي))
+    لاستدعاء سمة باستخدام (الآي دي) نضع هاشتاق (#) قبل اسم (الآي دي) خاصتها ثم نفتح الأقواس المجعدة
+    يمكن إعطاء سمتين أو أكثر الاسم نفسه
+  */
+  #name1{
+    color:#fff000;
+  }
+  /*
+    لتحديد سمة محددة يمكن وضعها داخل سمة آخرى واستدعاء السمتين ووضع مسافة بينهما ثم فتح الأقواس المجعدة و تستخدم للتعديل على جميع الميزات التي بنفس الاسم
+  */
+  div p{
+    color:#df9bc0ce;
+  }
+  input{
+    color:red;
+  }
+  /*
+    لإستدعاء (انبوت) محددة نكتب (انبوت) ثم نفتح الأقواس المربعة دون ترك مسافة بينهما ثم فتح الأقواس المجعدة
+    في الأقواس المربعة نكتب الصفة التي تؤشر على العنصر المخرج
+  */
+  input[type = "button"]{
+    background:green;
+    color:blue;
+
+  }
+
+
+/*                 to                   border                */
+
+  /*
+    لجعل حدود لأي سمة نستخدم (بوردر) الذي يأخذ ثلاث قيم هي:
+    1-(width) لتحديد عرض الحد
+    2-(color) لتحديد لون الحد
+    3-(style) التحديد شكل الحد
+    يجب كتابة (-) بين السمة (بوردر) و الصفة
+  */
+  .z{
+    width:40%;
+    height:100;
+    background:aqua;
+
+    border-width:10;
+    border-color:black;
+    border-style:solid;
+  }
+  /*
+    يمكن كتابة الثلاث قيم دون كتابة اسم الصفة بعد (بوردير) بترك فاصل بين كل قيمة وأخرى ولكن يجب كتابة (بيكسل) بعد قيمة العرض
+  */
+  .y{
+    height:100;
+    width:40%;
+    background:orange;
+
+    border:12px black double;
+  }
+
+
+/*               to                  featuers                 */
+
+
+  /*
+    (color) لتغير لون النص
+    (height) لتغير طول الحد
+    (width) لتغير عرض الحد
+    (background) لتغير لون الخلفية
+    (style) لتغير نوع الخط
+    (font-family) لتغير نوع الخط
+    (font-size) لتغير حجم الخط
+      القيم التي تأخذها هي:
+      1-(smaller)      2-(small)         3-(x-small)
+      4-(xx-small)     5-(medium)        6-(large)
+      7-(larger)       8-(x-large)       9-(xx-large)
+    (font-weight) لتغير سماكة الخط
+      القيم التي تأخذها هي:
+      1-(lighter)      2-(normal)         3-(blod)
+      4-(bloder)       5-(inherit)
+      of (100) to (900)
+    (line-height) لتغير المسافة بين الأسطر
+    (letter-spacing) لتغير المسافة بين الأحرف
+    (text-align) لتغير مكان الكلام في الصفحة
+      القيم التي تأخذها:
+      1-(center)        2-(right)         3-(left)
+    (direction) لتغير اتجاه الكلام
+      القيم التي تأخذها:
+      1-(rtl) من اليمين إلى اليسار
+      2-(ltr) من اليسار إلى اليمين
+  */
+  div h1{
+    font-family:Monospace;
+    font-size:50px;
+    font-weight:900;
+  }
+  #p{
+    line-height:20px;
+    letter-spacing:5px;
+  }
+  #p1{
+    text-align:right;
+    direction:rtl;
+  }
+  /*
+    (background-color) لتغير لون الخلفية
+      تأخذ ست قيم هي الألوان الأساسية الثلاث:
+       (1&2) للون الأحمر
+       (3&4) للون الأخضر
+       (5&6) للون الأزرق
+      (ff) هي القيمة العظمى
+    (background-color-rgb) لتغير لون الخلفية
+      تأخذ ثلاث قيم:
+      1- للون الأحمر
+      2- للون الأخضر
+      3- للون الأزرق
+      (255) هي القيمة العظمى
+    (background-color-rgba) = (background-color-rgb) + قيمة واحدة أخرى هي:
+        الشفافية
+        القيمة العظمى هي (1) القيمة الدنيا (0)
+  */
+  #div{
+    height:200px;
+    width:200px;
+    border:5px black double;
+    background-color:rgb(255, 0, 0);
+  }
+  #div1{
+    height:200px;
+    width:200px;
+    border:5px black double;
+    background-color:rgba(20, 100, 70, 0.5);
+  }
+  #div2{
+    height:200px;
+    width:200px;
+    border:5px black double;
+    background-color:#00ff00;
+  }
+  /*
+    (padding) للتعديل على الحدود الداخلية
+      الصفات التي تأخذها:
+      1-(-top) للحد العلوي
+      2-(-right) للحد الأيمن
+      3-(-bottom) للحد السفلي
+      4-(-left) للحد الأيسر
+      عند استخدامها دون أي صفة تكون القيمة التي توضع للتغيير لكل الصفات
+      عند وضع قيمتين تكون القيمة الأولى لل(الأعلى والأسفل) و تكون القيمة الثانية لل(اليمين واليسار)
+      إذا أردت كتابة كل القيم في سطر واحد يجب عليك كتابة أربع قيم على النحو التالي:
+      (top --> right --> bottom --> left)
+      القيم التي تأخذها:
+      1-(px) (البكسل)
+      2-(%) (بالمئة)
+  */
+  #divpadding1{
+    border:5px black solid;
+    padding-top:10px;
+    padding-right:20px;
+    padding-bottom:25px;
+    padding-left:15px;
+  }
+  #divpadding2{
+    border:5px black solid;
+    padding:10px;
+  }
+  #divpadding3{
+    border:5px black solid;
+    padding:10px 5px;
+  }
+  #divpadding4{
+    border:5px black solid;
+    padding:10px 30px 26px 17px;
+  }
+  /*
+    (margin) = (padding) لاكن:
+      للتعديل عاى الحدود الخارجية
+      تقبل القيم السالبة
+  */
+  #divmargin1{
+    border:5px black solid;
+    margin-left:-10px;
+  }
+  /*
+    في معظم المتصفحات يكون هناك حواف ظاهرة من أجل حذفها تقوم بتحديد كل العناصر و نغير الحواف
+    لتحديد كل العناصر قم بوضع (*) ثم افتح الأقواس المجعدة
+  */
+  *{
+    margin:0;
+  }
+  /*
+    (text-decoration) للتعديل على خط الرابط نستخدم
+      القيم التي تأخذها:
+      1-(underline) لوضع الخط تحت الرابط وهي الأساسية
+      2-(overline) لوضع الخط فوق الرابط
+      3-(line-through) لوضع الخط على الرابط
+      4-(none) لعدم وضع الخط
+    (cursor) لتغير شكل المؤشر نستخدم
+  */
+  #a{
+    text-decoration:line-through;
+    color:blue;
+    cursor:auto;
+  }
+  /*
+    (..:hover) للتغير الحالة عند وضع المؤشر على الشيئ
+  */
+  #a:hover{
+    color:red;
+    text-decoration:underline;
+  }
+  /*
+    العناصر (بلوك) تأخذ أي صغة لكن العناصر (ان لاين) لا تأخذ أي صغة
+    مثل:
+      1-(height)                 2-(width)
+      3-(top & bottom in padding & margin)
+    (display) لحل هذه المشكلة نستخدم
+    القيم التي تأخذها:
+      1-(block)           2-(inline)
+      3-(inline-block) تأخذ خواص (ان لاين) في السطر وتأخذ خواص (بلوك) في كل شيئ
+      4-(none) لإخفاء كل السطر
+  */
+  #divdisplay1{
+    background-color:orangered;
+    width:100px;
+    height:20px;
+    padding-top:20px;
+    margin-bottom:20px;
+    display:inline-block;
+  }
+  #spandisplay{
+    background-color:darkblue;
+    width:40px;
+    height:20px;
+    padding-top:50px;
+    margin-bottom:50px;
+    display:inline-block;
+  }
+  #divdisplay2{
+    display:none;
+  }
+  /*
+    (visibility) لإظهار و إخفاء الكلمات
+      القيم التي تأخذها:
+      1-(visibile) للإظهار وهي الأساسية
+      2-(hidden) للإخغاء
+  */
+  #divvisibility{
+    visibility:hidden;
+  }
+  /*
+    (overflow) للتحكم في الزيادات على حجم النص
+      القيم ااتي تأخذها:
+      1-(visibile) لإظهار الزيادات و هي الأساسية
+      2-(hidden) لإخفاء الزيادات
+      3-(scroll) لجعل قائمة تمرير للزيادات
+  */
+  #divoverflow{
+    width:200px;
+    height:200px;
+    background-color:darkred;
+    overflow:scroll;
+  }
+  /*
+    (float) لتحويل العنصر (بلوك) للعنصر (ان لاين)
+    لكن هي تجعل العنصر خارج إطار العمل
+    لحل هذه المشكلة نستخدم (كلير) التي تجعل السمة تنساب بين السمات الأخرى و تجعلها داخل إطار العمل
+  */
+  #divfloat div{
+    float:right;
+    width:10%;
+    height:20px;
+    /*clear:both;*/
+    background-color:#284839;
+    color:aqua;
+  }
+  #divfloat{
+    background-color:darkred;
+    width:100%;
+    height:20px;
+  }
+  #pclear{
+    clear:left;
+  }
+/*                 to                     photo                */
+  /*
+    (background-image) للصور
+      (url) لكتابة امتداد الصور
+    (background-size) لتغير حجم الصور
+      القيم التي تأخذها:
+      1-(auto) and it is basic
+      2-(cover) لجعل طول الصورة يساوي طول الحواف فقط
+      3-(contan) لجعل طول الصورة الحقيقي
+      4-باستخدام البكسل
+    (background-repeat) للتحكم بالتكرار
+      القيم التي تأخذها:
+      1-(repeat) للتكرار وهي الأءاسية
+      2-(no-repeat) لعدم التكرار
+      3-(repeat-x) للتكرار أفقيا
+      4-(repeat-y) للتكرار شاقوليا
+    (background-attachment) لتحريك الصورة خلال الإطار
+      القيم ااتي تأخذها:
+      1-(scroll) لعدم تحريكها وهي الأساسية
+      2-(fixed) لتحريكها
+    (background-position) لتغير مكان الصورة
+      إنها تأخذ قيمتين أساسيتين:
+      1-لتغير الأفق (left || center || right || px) و تأخذ
+      2-لتغير الشاقول (top || center || bottom || px) و تأخذ
+  */
+  #divphoto{
+    height:200px;
+    width:200px;
+    border:5px black solid;
+
+    background-color:yellow;
+    background-image:url("Accessories/Photo/sharingan1.jpg");
+    background-size:200px 200px;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-position:center center;
+  }
+/*                 to                   lists                 */
+  /*
+    (list-style-type) = (list-style) لتغير الترقيم
+      القيم التي تأخذها:
+      1-(disc) = (inherit) الدائرة المغلقة وهي الأساسية
+      2-(circle) (الدائرة المفتوحة)       3-(square) (المربع)
+      4-(decimal)    5-(decimal-leading-zero)
+      6-(lower-roman) (للأحرف الرومانية الصغيرة)   7-(lower-greek) (للأحرف الإغريقية الصغيرة)
+      8-(lower-latin) (للأحرف اللاتينية الصغيرة)    9-(lower-alpha) (للأحرف الإنكليزية الصغيرة)
+      10-(upper-roman) (للأحرف الرومانية الكبيرة)  11-(-upper-latin) (للأحرف اللاتينية الكبيرة)
+      12-(upper-alpha) (للأحرف الإنكليزية الكبيرة)  13-(armenian) ()
+      14-(georgian) ()     15-(none) (لاشيئ)
+    (list-style-image) لإضافة صورة بدل الترقيم
+    (list-style-position) لدمج أو فصل أو حذف الترقيم عن القائمة
+      القيم التي تأخذها:
+      1-(outside) للفصل وهي الأساسية
+      2-(inside) للدمج
+      3-(none) للحذف
+  */
+  ul{
+    list-style-type:lower-greek;
+    /*list-style-image:;*/
+    /*list-style:lower-roman;*/
+    list-style-position:inside;
+    background-color:gray;
+  }
+  ul li{
+    background-color:purple;
+    width:100px;
+  }
+/*               to                   position                */
+  /*
+    (position) لتغير مكان العنصر في الصفحة
+      القيم التي تأخذها:
+      1-(static) هي لا تغير أي شيء و هي الأساسية
+      2-(relative) لتغير مكان العنصر + حفظ مكانه القديم و تسمح بالتعدي على العناصر الأخرى
+      3-(fixed) لجعل العنصر يتحرك مع المستخدم في حالات خاصة + حفظ المكان القديم و تسمح بالتعدي على العناصر الأخرى
+      4-(sticky) = (fixed)
+        (2 + 3 + 4) القيم التي تأخذها:
+        1-(top) للأعلى
+        2-(right) لليمين
+        3-(bottom) للأسفل
+        4-(left) لليسار
+      to connect between dadelement and element must than be the dadelement (position:relative;)
+  */
+  #divposition1{
+    background-color:red;
+    position:static;
+  }
+  #divposition2{
+    background-color:blue;
+  }
+  #divposition3{
+    background-color:red;
+    position:relative;
+    top:10px;
+  }
+  #divposition4{
+    background-color:red;
+    position:absolute;
+    left:80%;
+  }
+  #divposition44{
+    background-color:red;
+    position:absolute;
+  }
+  #divdadtodivpositoin4{
+  width:200px;
+  height:50px;
+  border:3px black solid;
+  position:relative;
+  }
+  #divposition5{
+    background-color:red;
+    position:fixed;
+    top:0;
+    left:90%;
+  }
+  #divdadtodivpositoin5{
+    width:200px;
+    height:500px;
+    border:3px black solid;
+    position:relative;
+  }
+  #divposition6{
+    background-color:red;
+    width:30%;
+    position:sticky;
+    bottom:0;
+    left:90%;
+  }
+/*     to     pseudoelment       and       pseudoclasses       */
+  /*
+    (visited) لتغير أي شيء في العنصر عند زيارة الرابط
+    (checkbox) لتغير أي شيء في (الشكبوكس) عند الضغط عليه
+    (opacity) لتغير الشفافية
+    (focus) لتغير حدود النص (انبوت)
+    (first-letter) لتغير أي شيء في الحرف الأول في أي نص
+    (first-line) لتغير أي شيء في السطر الأول في أي نص
+    (selection) لتغير أي شيء في التحديد
+    (after) لإضافة محتوى بعد أي شيء
+    (before) لإضافة محتوى قبل أي شيء
+      (after & befors) القيمة الأساسية التي تأخذانها:
+      (content) لكتابة المحتوى
+    to add any pseudoclasses or pseudoelment must put (:) between the featuer and the pseudoclasses or pseudoelment (لإضافة إحداهما يجب وضع (:) بين السمة و إحداهما)
+    to make the pseudoclasses or the pseudoelment public must put (::) before them (لجعل إحداهما عامة يجب وضع (::) قبلهما)
+  */
+  #divpseudoelement-and-pseudoclasses{
+    border:5px #000 solid;
+    width:98%;
+    height:450px;
+  }
+  a{
+    text-decoration:none;
+  }
+  a:visited{
+    color:black;
+  }
+  input[type = "checkbox"]:checked{
+    opacity:0;
+  }
+  #inputtext1:focus{
+    color:purple;
+    border:5px blueviolet solid;
+  }
+  #inputtext2:focus{
+    outline:none;
+    border:4px blueviolet solid;
+  }
+  #ppseudoelements{
+    color:black;
+  }
+  #ppseudoelements:first-letter{
+    color:red;
+    font-size:20px;
+  }
+  #ppseudoelements:first-line{
+    color:blue;
+  }
+  ::selection{
+    color:white;
+    background-color:black;
+  }
+  #pafterbefore{
+    width:70%;
+    background-color:black;
+    padding:10px;
+    position:relative;
+  }
+  #pafterbefore:after{
+    content:"thier";
+    color:red;
+  }
+  #pafterbefore:before{
+    content:"";
+    height:100%;
+    width:5px;
+    background-color:blue;
+    position:absolute;
+    left:0;
+    top:0;
+  }
+/*                to                   @media                 */
+
+    #centermedia{
+      display:inline-block;
+      background-color:red;
+      width:24%;
+      text-align:center;
+      margin-left:25%;
+    }
+    #centermedia1{
+      display:inline-block;
+      background-color:red;
+      width:24%;
+      text-align:center;
+    }
+    @media screen and (max-width:100px){
+      #centermedia{
+        display:block;
+        background-color:green;
+      }
+      #centermedia1{
+        display:block;
+        background-color:green;
+      }
+    }
+    @media screen and (min-width:100px) and (max-width:400px){
+      #centermedia{
+        display:block;
+        background-color:darkblue;
+      }
+      #centermedia1{
+        display:inline-block;
+        background-color:darkblue;
+      }
+    }
+    @media screen and (min-width:400px) and (max-width:600px){
+      #centermedia{
+        display:block;
+        background-color:black;
+      }
+      #centermedia1{
+        display:inline;
+        background-color:black;
+      }
+    }

@@ -1,0 +1,96 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);/**/
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);/**/
+@import url(http://fonts.googleapis.com/earlyaccess/amiri.css);
+@import url(http://fonts.googleapis.com/earlyaccess/lateef.css);
+@import url(http://fonts.googleapis.com/earlyaccess/scheherazade.css);
+@import url(http://fonts.googleapis.com/earlyaccess/thabit.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cairo.css);
+
+@import url(http://fonts.googleapis.com/css?family=Tajawal&display=swap.css);
+
+@import url(http://fonts.googleapis.com/css?family=Rakkas&display=swap.css);/**/
+
+@import url(http://fonts.googleapis.com/css?family=Aref+Ruqaa&display=swap.css);
+
+@import url(http://fonts.googleapis.com/css?family=Lemonada&display=swap.css);/**/
+
+@import url(https://fonts.googleapis.com/css?family=El+Messiri&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Vazirmatn&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Almarai&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Changa&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Mada&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Lalezar&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Arabic&display=swap.css);/**/
+
+@import url(https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Markazi+Text&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Readex+Pro&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Harmattan&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Mirza&display=swap.css);/**/
+
+@import url(https://fonts.googleapis.com/css?family=Katibeh&display=swap.css);/**/
+
+@import url(https://fonts.googleapis.com/css?family=Baloo+Bhaijaan+2&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Kufam&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Jomhuria&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Vibes&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Qahiri&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Kufi+Arabic&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+Arabic&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Naskh+Arabic&display=swap.css);
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Nastaliq+Urdu&display=swap.css);
+
+*{
+  font-size: 30px;
+}
+.line1{font-family: 'droid arabic kufi' , serif;}
+.line2{font-family: 'droid arabic naskh' , serif;}
+.line3{font-family: 'amiri' , serif;}
+.line4{font-family: 'lateef' , serif;}
+.line5{font-family: 'scheherazade' , serif;}
+.line6{font-family: 'thabit' , serif;}
+.line7{font-family: 'cairo' , serif;}
+.line8{font-family: 'tajawal' , serif;}/*الخط الأساسي*/
+.line9{font-family: 'rakkas' , serif;}
+.line10{font-family: 'aref ruqaa' , serif;}
+.line11{font-family: 'lemonada' , serif;}
+.line12{font-family: 'el messiri' , serif;}
+.line13{font-family: 'Vazirmatn' , serif;}
+.line14{font-family: 'almarai' , serif;}
+.line15{font-family: 'changa' , serif;}
+.line16{font-family: 'mada' , serif;}
+.line17{font-family: 'lalezar' , serif;}
+.line18{font-family: 'IBM plex sans arabic' , serif;}
+.line19{font-family: 'reem kufi' , serif;}
+.line20{font-family: 'markazi text' , serif;}
+.line21{font-family: 'readex pro' , serif;}
+.line22{font-family: 'harmattan' , serif;}
+.line23{font-family: 'mirza' , serif;}
+.line24{font-family: 'katibeh' , serif;}
+.line25{font-family: 'baloo bhaijaan 2' , serif;}
+.line26{font-family: 'kufam' , serif;}
+.line27{font-family: 'jomhuria' , serif;}
+.line28{font-family: 'vibes' , serif;}
+.line29{font-family: 'qahiri' , serif;}
+.line30{font-family: 'noto kufi arabic' , serif;}
+.line31{font-family: 'noto sans arabic' , serif;}
+.line32{font-family: 'noto naskh arabic' , serif;}
+.line33{font-family: 'noto nastaliq urdu' , serif;}

@@ -52,7 +52,7 @@
   8-(time.h)
     (functions):
 
-(mathematical calculations) العمليات الحسابية:
+(mathematical operators) العمليات الحسابية:
   1-(+) للجمع
   2-(++) لزيادة (1)
   3-(+=) للزيادة على القيمة
@@ -66,8 +66,8 @@
 
 (conditional sentence) الجملة الشرطية:
   (if(conditional الشرط){الأمر} else if(conditional الشرط){الأمر} else{الأمر})
-  عمليات الجملة الشرطية:
-    ((&&) and و (||) or أو (==) equal equal? هل يساوي (!=) not equal? هل لا يساوي (<) younger than أصغر من (>) bigger than أكبر من (<= || =<) smaller and equal أصغر و يساوي(>= || =>) bigger and equal أكبر و يساوي)
+(logic operators) العمليات المنطقية :
+  ((&&) and و (||) or أو (==) equal equal? هل يساوي (!=) not equal? هل لا يساوي (<) younger than أصغر من (>) bigger than أكبر من (<= || =<) smaller and equal أصغر و يساوي(>= || =>) bigger and equal أكبر و يساوي)
 
 (loops sentence) الجمل الدورانية:
   1-(while(الشرط){الأمر}) تقوم بفحص الشرط ثم العمل
@@ -139,11 +139,17 @@
 #include <stdbool.h>
 typedef char* string;
 
+void dataType();
+void mathOperators();
+void coditionLoop();
 bool conditional();
 bool loop();
 
 int main(){
 
+  dataType();
+  mathOperators();
+  coditionLoop();
   conditional();
   loop();
 
@@ -163,6 +169,51 @@ bool conditional(){
     return true;
   }
 
+}
+
+void dataType(){
+  string name = "Ahmed";
+  int age = 18;
+  double resultNumber = 88.5;
+  char resultCharactor = 'A';
+  bool accessful = true;
+  long yourNumber = 23809;
+
+  printf("your name: %s\t| your age: %i\t| your result by number: %f\t| your result by charactor: %c\t| accessful: %o\t| your number: %i\n", name, age, resultNumber, resultCharactor, accessful, yourNumber);
+
+}
+
+void mathOperators(){
+  int plus, minus, beating, division;
+
+  plus = 100 + 5;
+  minus = 100 - 10;
+  beating = 100 * 5;
+  division = 100 / 10;
+
+  printf("number: %i\t| number + 5: %i\t| number - 10: %i\t| number * 5: %i\t| number / 10: %i\n", 100, plus, minus, beating, division);
+
+}
+
+void coditionLoop(){
+  int var = 0;
+  do{
+    for(int i = 1; i < 10; i++){
+      if(var < i){
+        printf("i: %i\t", i);
+        i =- 2;
+      }
+      else if(var > i){
+        printf("var: %i\t", var);
+        var++;
+        i++;
+      }
+      else{
+        printf("\n");
+        return;
+      }
+    }
+  }while(var > 0 && var < 100);
 }
 
 typedef struct{

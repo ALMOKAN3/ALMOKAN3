@@ -1,6 +1,1 @@
-typedef struct{
-
-  string name;
-  string number;
-
-}ss;
+long yourNumber = 0050387;

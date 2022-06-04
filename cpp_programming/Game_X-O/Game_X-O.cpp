@@ -53,25 +53,25 @@ int main() {
 void print()
 {
 
-  cout << "\t" << array1[0] 
-       << "\t | \t \t" << array1[1] 
-       << "\t \t | \t \t" << array1[2] 
-       << "\n";
-  cout << "------------------------------------------------------------------------ \n";
-  cout << "\t" << array1[3] 
-       << "\t | \t \t" << array1[4] 
-       << "\t \t | \t \t" << array1[5] 
-       << "\n";
-  cout << "------------------------------------------------------------------------ \n";
-  cout << "\t" << array1[6] 
-       << "\t | \t \t" << array1[7] 
-       << "\t \t | \t \t" << array1[8] 
-       << "\n";
-  
+  for (int i = 0; i < 9; i++){
+    cout << "\t " << array1[i];
+    if (array2[i] == 3 || array2[i] == 6 || array2[i] == 9){
+      cout << " ";
+    }
+    else{
+      cout << "\t | ";
+    }
+    if (i == 2 || i == 5){
+      cout << "\n -------------------------------------------------- \n";
+    }
+  }
+  cout << endl;
+
 }
 
 void returnvaluesarray1()
 {
+
   array1[0] = {'1'};
   array1[1] = {'2'};
   array1[2] = {'3'};
@@ -81,6 +81,7 @@ void returnvaluesarray1()
   array1[6] = {'7'};
   array1[7] = {'8'};
   array1[8] = {'9'};
+
 }
 
 void swap(char &, int &);
@@ -101,11 +102,11 @@ void printXO()
     {
       if (i % 2 == 0)
       {
-        cout << "It is role 'X' select a number \n or type '0' to return the round \n";
+        cout << "It is role 'X' select a number \n";
         cin >> x1;
         if (x1 != 0)
         {
-          while (!checkup(x1))
+          while (checkup(x1))
           {
             cout << "The place is full. Rewrite \n";
             cin >> x1;
@@ -122,11 +123,11 @@ void printXO()
       }
       else
       {
-        cout << "It is role 'O' select a number \n or type '0' to return the round \n";
+        cout << "It is role 'O' select a number \n";
         cin >> o1;
         if (o1 != 0)
         {
-          while (!checkup(o1))
+          while (checkup(o1))
           {
             cout << "The place is full. Rewrite \n";
             cin >> o1;
@@ -166,50 +167,15 @@ void swap(char &a, int &b)
 bool checkup(int xo)
 {
 
-  if (xo < 1 || xo > 9)
-    return false;
-  if (xo == 0)
-    
-  switch (xo)
-  {
-    case 1:
-      if (array1[0] == 'X' || array1[0] == 'O')
-        return false;
-    break;
-    case 2:
-      if (array1[1] == 'X' || array1[1] == 'O')
-        return false;
-    break;
-    case 3:
-      if (array1[2] == 'X' || array1[2] == 'O')
-        return false;
-    break;
-    case 4:
-      if (array1[3] == 'X' || array1[3] == 'O')
-        return false;
-    break;
-    case 5:
-      if (array1[4] == 'X' || array1[4] == 'O')
-        return false;
-    break;
-    case 6:
-      if (array1[5] == 'X' || array1[5] == 'O')
-        return false;
-    break;
-    case 7:
-      if (array1[6] == 'X' || array1[6] == 'O')
-        return false;
-    break;
-    case 8:
-      if (array1[7] == 'X' || array1[7] == 'O')
-        return false;
-    break;
-    case 9:
-      if (array1[8] == 'X' || array1[8] == 'O')
-        return false;
-    break;
+  
+  for (int i = 0; i < 9; i++){
+      if (array1[xo - 1] == 'X' || array1[xo - 1] == 'O')
+        return true;
   }
-  return true;
+  if (xo < 1 || xo > 9)
+    return true;
+
+  return false;
 
 }
 
@@ -305,72 +271,20 @@ bool winnercheck()
 
 void CheckselectionX(char x2)
 {
-  char x = 'X';
    
-  switch (x1)
-  {
-    case 1:
-      swap(x, x1);
-    break;
-    case 2:
-      swap(x, x1);
-    break;
-    case 3:
-      swap(x, x1);
-    break;
-    case 4:
-      swap(x, x1);
-    break;
-    case 5:
-      swap(x, x1);
-    break;
-    case 6:
-      swap(x, x1);
-    break;
-    case 7:
-      swap(x, x1);
-    break;
-    case 8:
-      swap(x, x1);
-    break;
-    case 9:
-      swap(x, x1);
-    break;
+  for (int i = 0; i < 9; i++){
+    if(x1 == i)
+      swap(x2, x1);
   }
+
 }
 
 void CheckselectionO(char o2)
 {
-  char o = 'O';
-  switch (o1)
-  {
-    case 1:
-      swap(o, o1);
-    break;
-    case 2:
-      swap(o, o1);
-    break;
-    case 3:
-      swap(o, o1);
-    break;
-    case 4:
-      swap(o, o1);
-    break;
-    case 5:
-      swap(o, o1);
-    break;
-    case 6:
-      swap(o, o1);
-    break;
-    case 7:
-      swap(o, o1);
-    break;
-    case 8:
-      swap(o, o1);
-    break;
-    case 9:
-      swap(o, o1);
-    break;
+  
+  for (int i = 0; i < 9; i++){
+    if(o1 == i)
+      swap(o2, o1);
   }
-}
 
+}

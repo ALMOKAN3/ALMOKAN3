@@ -84,7 +84,7 @@ void returnvaluesarray1()
 
 }
 
-void swap(char &, int &);
+void swap(char, int);
 void CheckselectionX(char x2);
 void CheckselectionO(char o2);
 bool checkup(int);
@@ -151,7 +151,7 @@ void printXO()
 
 }
 
-void swap(char &a, int &b)
+void swap(char a, int b)
 {
 
   for (int i = 0; i <= 8; i++)

@@ -181,6 +181,15 @@ int main(){
             cout << z[z1] << "\t";
         }
         cout << endl;
+
+        int A[3][3] = {1,2,3,4,5,6,7,8,9};
+        cout << endl;
+        for(int A1 = 0; A1 < 3; A1++){
+            for(int A2 = 0; A2 < 3; A2++){
+                cout << A[A1][A2] << "\t";
+            }
+            cout << endl;
+        }
         
 
     return 0;

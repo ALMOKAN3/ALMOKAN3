@@ -7,7 +7,7 @@ using namespace std;
 int main(){
 
      // هذا هو عامل الإخراج
-     cout << "مرحبا" << endl;
+     cout << "Hello" << endl;
      
      //Data Types and varibles أنواع البيانات و المتغيرات
      //عند تسمية المتغير يجب أن تكون أول خانة حرف أو شرطة سفلية لا غير
@@ -18,8 +18,8 @@ int main(){
      
      // هذان النوعان يعرفان متغيرات تخزن بينات لأعداد ذات فاصلة عشرية الفرق بين النوع الأول و النوع الثاني هو أن النوع الثاني يمكنه تخزين أعداد أكبر
      float num1 = 1.5683;
-     double num2 = 5.86457537;
-     cout << num1 << endl << num2;
+     double num2 = 5.8645753;
+     cout << num1 << endl << num2 << endl;
      
      //هذا النوع يعرف متغيرات تخزن بيانات قيمتين (نعم/لا)
      bool result = true;
@@ -41,41 +41,41 @@ int main(){
      
      //Math operators العمليات الحسابية
      
-     double j = 4.0, k = 2.0, l;
-     l = j + k;
-     cout << "the plural: " << l << endl;
-     l = j - k;
-     cout << "the proposal: "<< l << endl;
-     l = j * k;
-     cout << "beating: "<< l << endl;
-     l = j / k;
-     cout << "division: "<< l << endl;
-     l = j / ++k;
-     cout << "remainder of the division: "<< l << endl;
+     double var1 = 4.0, var2 = 2.0, var3;
+     var3 = var1 + var2;
+     cout << "the plural: " << var3 << endl;
+     var3 = var1 - var2;
+     cout << "the proposal: "<< var3 << endl;
+     var3 = var1 * var2;
+     cout << "beating: "<< var3 << endl;
+     var3 = var1 / var2;
+     cout << "division: "<< var3 << endl;
+     var3 = var1 / ++var2;
+     cout << "remainder of the division: "<< var3 << endl;
      
      //conditional and logic operator الشروط و العمليات المنطقية
     //(if)(else if)(else)
-     int m;
+     int conditional1;
      cout << "What is your end result? ";
-     cin >> m;
-     if(m == 100){
+     cin >> conditional1;
+     if(conditional1 == 100){
          cout << "Congratulations on your achievement ^_^" << endl;
          }
-     else if(m >= 90 && m < 100){
+     else if(conditional1 >= 90 && conditional1 < 100){
          cout << "Congratulation ~_~" << endl;
          }
-     else if(m >= 70 && m < 90){
+     else if(conditional1 >= 70 && conditional1 < 90){
          cout << "Congratulations *_*" << endl;
          }
-     else if(m >= 40 && m < 70){
+     else if(conditional1 >= 40 && conditional1 < 70){
          cout << "You are successful -_-" << endl;
          }
-     else if(m >= 1 && m < 40){
+     else if(conditional1 >= 1 && conditional1 < 40){
          cout << "Unfortunately you fail ¡_¡" << endl;
          }
      else{
          
-         if(m != 0){
+         if(conditional1 != 0){
              cout << "There is no such value" << endl;
              }
          else{
@@ -84,110 +84,111 @@ int main(){
          }
          
          //(switch)(case)(defult)(break)
-        int n;
+        int conditional2;
         cout << "Enter number (1-5): ";
-        cin >> n;
-        switch(n){
+        cin >> conditional2;
+        switch(conditional2){
             case 1:{
-                cout << endl << "Hola" << endl;
+                cout << "Hola" << endl;
             }break;
             case 2:{
-                cout << endl << "Hello" << endl;
+                cout << "Hello" << endl;
             }break;
             case 3:{
-                cout << endl << "Hi" << endl;
+                cout << "Hi" << endl;
             }break;
             case 4:{
-                cout << endl << "bonjor" << endl;
+                cout << "bonjor" << endl;
             }break;
             case 5:{
-                cout << endl << "Good morning" << endl;
+                cout << "Good morning" << endl;
             }break;
-            defult:{
-                cout << endl << "You did not enter a valid number" << endl;
+            default:{
+                cout << "You did not enter a valid number" << endl;
             }break;
         }
         
         //loops التكرار
         //(while)
-        int o = 1;
-        while(o != 4){
-            cout << o << endl;
-            o++;
+        int loop1 = 1;
+        while(loop1 != 4){
+            cout << loop1 << endl;
+            loop1++;
         }
         
         //(do)(while)
-        int p = 1;
+        int loop2 = 1;
         do{
-            cout << p << endl;
-        }while(p != 1);
+            cout << loop2 << endl;
+        }while(loop2 != 1);
         
         //(for)
-        for(int q = 0; q < 5; q++){
-            cout << q << endl;
+        for(int loop3 = 0; loop3 < 5; loop3++){
+            cout << loop3 << endl;
         }
         
         //(for{for})
-        for(int r = 0; r < 5; r++){
-            for(int s = 0; s <= r; s++){
+        for(int starLoopFor1 = 0; starLoopFor1 < 5; starLoopFor1++){
+            for(int starLoopFor2 = 0; starLoopFor2 <= starLoopFor1; starLoopFor2++){
                 cout << "*";
             }
             cout << endl;
         }
-        int t = 5, u = 0;
-        while(t >= 0){
-            while(u < t){
+        //(while{while})
+        int starLoopWhile1 = 5, starLoopWhile2 = 0;
+        while(starLoopWhile1 >= 0){
+            while(starLoopWhile2 < starLoopWhile1){
                 cout << "*";
-                u++;
+                starLoopWhile2++;
             }
-            u = 0;
-            t--;
+            starLoopWhile2 = 0;
+            starLoopWhile1--;
             cout << endl;
         }
         
         //(break)(continue)
-        int v = 0;
-        while(v < 5){
-            if(v == 1){
-                v++;
+        int loopBreakContinue = 0;
+        while(loopBreakContinue < 5){
+            if(loopBreakContinue == 1){
+                loopBreakContinue++;
                 continue;
             }
-            if(v == 4){
+            if(loopBreakContinue == 4){
                 break;
             }
-            cout << v << endl;
-            v++;
+            cout << loopBreakContinue << endl;
+            loopBreakContinue++;
         }
         
         //Arrays المصفوفات
         //(array)
-        int w[2];
-        w[0] = 28;
-        w[1] = 38;
-        cout << w[0] << "\t" << w[1] << endl;
+        int array1[2];
+        array1[0] = 28;
+        array1[1] = 38;
+        cout << array1[0] << "\t" << array1[1] << endl;
         
         //(array)(for)
-        float x[4] = {4.8, 5.8, 4.8, 2.8};
-        for(int x1 = 0; x1 < 4; x1++){
-            cout << x[x1] << "\t";
+        float array2[4] = {4.8, 5.8, 4.8, 2.8};
+        for(int array2ForLoop = 0; array2ForLoop < 4; array2ForLoop++){
+            cout << array2[array2ForLoop] << "\t";
         }
         cout << endl;
         
         //(array)(constant size)(for)
         //const لجعل قيمة المتغير ثابتة لا يمكن تغيرها
-        const int y = 3;
-        int z[y] = {4, 8, 2};
-        for(int z1 = 0; z1 < y; z1++){
-            cout << z[z1] << "\t";
+        const int constantSize = 3;
+        int array3[constantSize] = {4, 8, 2};
+        for(int array3ForLoop = 0; array3ForLoop < constantSize; array3ForLoop++){
+            cout << array3[array3ForLoop] << "\t";
         }
         cout << endl;
 
         // المصفوفات ثنائية الأبعاد
-        int A[3][3] = {1,2,3,4,5,6,7,8,9};
+        int array2D1[3][3] = {1,2,3,4,5,6,7,8,9};
         cout << endl;
-        for(int A1 = 0; A1 < 3; A1++){
-            for(int A2 = 0; A2 < 3; A2++){
-                cout << A[A1][A2] << "\t";
+        for(int array2DForloop = 0; array2DForloop < 3; array2DForloop++){
+            for(int array2DForForloop = 0; array2DForForloop < 3; array2DForForloop++){
+                cout << array2D1[array2DForloop][array2DForForloop] << "\t";
             }
             cout << endl;
         }

@@ -2,5 +2,7 @@
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
         "iostream": "cpp"
-    }
+    },
+    "debug.allowBreakpointsEverywhere": false,
+    "debug.showBreakpointsInOverviewRuler": false
 }

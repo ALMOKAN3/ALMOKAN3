@@ -112,11 +112,11 @@ int main(){
     cout << "array[0] = " << *pointerArray << "\t" << "array[1] = " << *(pointerArray+1) << "\t" << "array[3] = " << *(pointerArray+2) << endl;
     cout << endl;
     // أخيرا من الخطر استخدام المؤ شر بكثرة لأنه يعمل بشكل مباشر مع الذاكرة
-
+    
     return 0;
 }
 
-// بواسطة هذه الدالة يتم أخذ نسخة من المتغير الممرر والتعديل غلى النسخة فقط
+// بواسطة هذه الدالة يتم أخذ نسخة من المتغير الممرر والتعديل على النسخة فقط
 void changeByValue(int number1){
     number1 = number1 + 5;
     cout << number1 << endl;

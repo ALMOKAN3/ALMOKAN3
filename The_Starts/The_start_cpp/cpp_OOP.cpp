@@ -74,7 +74,7 @@ class Student{
     }
 };
 
-// construction and destroy البناء والتدمير
+// construction(constructuer) and destroy(distractuer) البناء والتدمير
 class constdes{
     public:
     int number;
@@ -87,6 +87,37 @@ class constdes{
     // تستخدم لتدمير الكائن ~ (name of class اسم الفئة)
     ~ constdes(){
         cout << number << "\t/\t" << price << "\t/\tthe class deid" << endl;
+    }
+};
+
+// inheritance الوراثة
+// تسنخدم الوراثة لترث إحدى الفئات خواص فئة أخرى
+// مثال على فئة ترث الخواص العامة فقط لفئة أخرى:
+class school{
+    public:
+    string NameOfSchool;
+};
+class teacher : public school{
+    public:
+    int TeacherAge;
+    int TeacherYearExper;
+};
+
+// overwriting
+// تستخدم عندما ترث فئة من فئة أخرى ونريد إنشاء طريقة لها نفس اسم الطريقة التي موجودة في الفئة المورثة
+class mother{
+    public:
+    string MotherColorHair;
+    void PrintColorHair(){
+        cout << MotherColorHair << endl;
+    }
+};
+class girl : public mother{
+    public:
+    int GirlAge;
+    string GirlColorHair;
+    void PrintColorHair(){ // overwriting
+        cout << GirlColorHair << endl;
     }
 };
 
@@ -105,6 +136,21 @@ int main(){
     cout << Student1.StuID << "\t/\t" << Student1.StuName << endl;
 
     constdes constructiondestroy = constdes(15, 15.789);
+
+    teacher teacher1;
+    teacher1.TeacherAge = 35;
+    teacher1.TeacherYearExper = 8;
+    teacher1.NameOfSchool = "Almotanabi";
+    cout << teacher1.TeacherAge << "\t/\t" << teacher1.TeacherYearExper << "\t/\t" << teacher1.NameOfSchool << endl;
+
+    girl Girl1;
+    Girl1.GirlAge = 14;
+    Girl1.GirlColorHair = "red";
+    Girl1.MotherColorHair = "black";
+    Girl1.PrintColorHair();
+
+
+
 
     return 0;
 }

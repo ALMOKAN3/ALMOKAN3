@@ -121,6 +121,36 @@ class girl : public mother{
     }
 };
 
+// aggregation التجميع
+// يستخدم عند تعريف متغير داخل فئة من نوع فئة تم إنشاؤها سابقا
+
+class adminType{
+    public:
+    string adminTypeName;
+};
+class users{
+    public:
+    string userName;
+    string userpassword;
+    adminType type;
+};
+
+// الدوال والفئات
+
+class divresult{
+    public:
+    int div;
+    int divRemain;
+};
+divresult Div(int number1, int number2){
+    divresult result;
+    result.div = number1 / number2;
+    result.divRemain = number1 % number2;
+
+    return result;
+}
+
+
 int main(){
     // Car BMWarr[any value] أيضا على الشكل Car ويمكن تعريف مصفوفة بنوع البيانات الجديد (Car BMW) الآن بالشكل Car يمكن تعريف متغير من نوع البيانات
     BMWCar.number = 5197;
@@ -149,8 +179,14 @@ int main(){
     Girl1.MotherColorHair = "black";
     Girl1.PrintColorHair();
 
+    users myUser;
+    myUser.userName = "Ahmed";
+    myUser.userpassword = "123456";
+    myUser.type.adminTypeName = "admin";
+    cout <<"Username is: " << myUser.userName <<  ", type is: " << myUser.type.adminTypeName << endl;
 
-
-
+    divresult myresult = Div(50, 3);
+    cout << "Div: " << myresult.div << " , Remain: " << myresult.divRemain << "\t=>\t" << myresult.div << "." << myresult.divRemain << endl;
+    
     return 0;
 }

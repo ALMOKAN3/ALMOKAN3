@@ -150,6 +150,18 @@ divresult Div(int number1, int number2){
     return result;
 }
 
+// static varibals and static methods المتغيرات الثابتة والطرق الثابتة
+// تستخدم في الفئات عندما يكون هناك متغير ثابت أو طريقة ثابتة بالنسبة لكل الكائنات الننشأ من هذه الفئة
+
+class men{
+    public:
+    int age;
+    static string type;
+    static void print(){
+        cout << " => I'm man" << endl;
+    }
+};
+string men::type = "man";
 
 int main(){
     // Car BMWarr[any value] أيضا على الشكل Car ويمكن تعريف مصفوفة بنوع البيانات الجديد (Car BMW) الآن بالشكل Car يمكن تعريف متغير من نوع البيانات
@@ -188,5 +200,17 @@ int main(){
     divresult myresult = Div(50, 3);
     cout << "Div: " << myresult.div << " , Remain: " << myresult.divRemain << "\t=>\t" << myresult.div << "." << myresult.divRemain << endl;
     
+    men man1;
+    man1.age = 24;
+    cout << "age is: " << man1.age << "type is: " << man1.type;
+    men::print();
+    men man2;
+    man2.age = 29;
+    cout << "age is: " << man2.age << "type is: " << man2.type;
+    men::print();
+
+
+
+
     return 0;
 }

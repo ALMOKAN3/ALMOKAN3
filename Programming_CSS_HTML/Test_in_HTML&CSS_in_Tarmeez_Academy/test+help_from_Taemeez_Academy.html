@@ -1,0 +1,263 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin: 0;
+                font-family: 'Tajawal', 'sans-serif';
+            }
+
+            #hedder{
+                width: 100%;
+                height: 350px;
+                overflow: hidden;
+                position: relative;
+                border-bottom: 10px solid #087a79;
+            }
+
+            #hedder-image{
+                width: 100%;
+                position: relative;
+            }
+
+            #cover{
+                background-color: black;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                opacity: 0.5;
+            }
+
+            #mneu-hedder{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 50px;
+                direction: rtl;
+            }
+
+            #mneu{
+                margin-right: 10px;
+                margin-top: 20px;
+            }
+
+            #mneu > .btn{
+                margin-right: 30px;
+                color: white;
+                text-decoration: none;
+                padding: 5px;
+                border-radius: 10px;
+                transition: background 0.3s;
+            }
+
+            #mneu > .btn:hover{
+                background-color: rgba(88, 88, 88, 0.5);
+            }
+
+            .active{
+                background-color: #087a79;
+            }
+
+            #main-content{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: -280px;
+            }
+
+            #centered-content{
+                text-align: center;
+                color: white;
+                font-size: 30px;
+            }
+
+            #img-frame{
+                width: 200px;
+                height: 200px;
+                background-color: #087a79;
+                border-radius: 50%;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                box-shadow: 0 9px 8px #c7c7c7;
+                transition: box-shadow 0.2s, padding 0.4s;
+            }
+
+            #img-frame:hover{
+                box-shadow: 0 9px 8px #959595;
+                padding: 15px;
+            }
+
+            #img-frame > img{
+                height: 100%;
+            }
+
+            #main-body{
+                position: relative;
+                top: -300px;
+            }
+
+            #main-body > #main-hdder{
+                text-align: center;
+                font-size: 18px;
+                color: #6b6b6b;
+            }
+
+            #main-body > #main-hdder > h1{
+                font-weight: 400;
+            }
+
+            #features, #courses{
+                direction: rtl;
+                display: flex;
+                justify-content: center;
+            }
+
+            .feature, .course{
+                margin: 0 50px;
+                width: 300px;
+                background-color: rgb(221, 221, 221);
+                text-align: center;
+                color: #087a79;
+            }
+
+            #courses-section{
+                margin-top: 150px;
+                background-color: rgb(235, 235, 235);
+                padding: 20px 0;
+                direction: rtl;
+            }
+
+            #courses-section > h1{
+                margin-right: 30px;
+                font-size: 40px;
+                font-weight: 500;
+            }
+
+            .course{
+                /*لتكون الخلفية شفافة*/
+                background: transparent;
+                display: flex;
+                border: 1px solid #585858;
+                margin: 0 30px;
+                border-radius: 10px;
+                width: 30%;
+                font-size: 13;
+                box-shadow: 0 2px 8px rgb(219, 219, 219);
+            }
+
+            .course > img{
+                height: 100px;
+            }
+
+            .course h2{
+                margin-right: 12px;
+                color: rgb(104, 104, 104);
+                font-weight: 500;
+            }
+
+            .course button{
+                background-color: #087a79;
+                border: none;
+                color: white;
+                height: 30px;
+                width: 90px;
+                font-family: 'Tajawal', 'sans-serif';
+                box-shadow: 0 2px 8px rgb(142, 142, 142);
+            }
+
+            #footer{
+                background-color: #043837;
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+
+            #footer h5{
+                font-weight: 400;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main-hedder">
+            <div id="hedder">
+                <img id="hedder-image" src="https://static.techspot.com/articles-info/1965/images/2020-01-05-image.jpg" alt="nothing" width="100%"/>
+                <div id="cover"></div>
+                <div id="mneu-hedder">
+                    <div id="mneu">
+                        <a href="###" class="btn active">الرئيسية</a>
+                        <a href="###" class="btn">الدورات</a>
+                        <a href="###" class="btn">المقالات</a>
+                        <a href="###" class="btn">الملخصات</a>
+                        <a href="###" class="btn">المصادر</a>
+                    </div>
+                </div>
+            </div>
+            <div id="main-content">
+                <div id="centered-content">
+                    <h1>أكاديمو</h1>
+                    <div id="img-frame">
+                        <img src="white-logo.png" alt="nothing"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-body">
+            <div id="main-hdder">
+                <h1>موقع أكاديمو لتعلم البرمجة</h1>
+            </div>
+            <div id="features">
+                <div class="feature">
+                    <h1>دورات عربية بالكامل</h1>
+                </div>
+                <div class="feature">
+                    <h1>دورات مجانية تماما</h1>
+                </div>
+                <div class="feature">
+                    <h1>دورات متنوعة</h1>
+                </div>
+            </div>
+            <div id="courses-section">
+            <h1>دوراتنا المتاحة على الموقع</h1>
+            <div id="courses">
+                <div class="course">
+                    <img src="html-course.png" alt="nothing"/>
+                    <div>
+                        <h2>دورة تعلم الhtml</h2>
+                        <button>مشاهدة</button>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="css-course.png" alt="nothing"/>
+                    <div>
+                        <h2>دورة تعلم الcss</h2>
+                        <button>مشاهدة</button>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="git-course.png" alt="nothing"/>
+                    <div>
+                        <h2>دورة تعلم الgit</h2>
+                        <button>مشاهدة</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="footer">
+            <h5>جميع الحقوق محفوظة - لأكاديمو 2022</h5>
+        </div>
+    </body>
+</html>

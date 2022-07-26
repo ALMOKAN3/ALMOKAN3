@@ -1,0 +1,181 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+            }
+
+            #list{
+                text-align: right;
+                position: absolute;
+                width: 100%;
+                height: 50%;
+            }
+
+            .list-items{
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                margin-right: 20px;
+                font-size: 20px;
+            }
+
+            .list-items:visited{
+                background: green;
+            }
+
+            .list-items:hover{
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+
+            #title{
+                position: absolute;
+                top: 30%;
+                width: 100%;
+                text-align: center;
+                font-size: 50px;
+                color: white;
+            }
+
+            #line{
+                width: 100%;
+                height: 5px;
+                background-color: cyan;
+            }
+
+            #mid-image{
+                position: relative;
+                left: 633px;
+                bottom: 50px;
+                box-shadow: 0 5px 3px gray;
+                transition: width 1s, box-shadow 1s;
+            }
+
+            #mid-image:hover{
+                width: 130px;
+                box-shadow: 0 10px 3px #333;
+            }
+
+            #attribute{
+                color: #aaa;
+                text-align: center;
+                font-size: 30px;
+                margin: 20px
+            }
+
+            #attributes{
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 10%;
+            }
+
+            .arbte{
+                background-color: #ddd;
+                color: #0a8;
+                width: 15%;
+                height: 50px;
+                text-align: center;
+                line-height: 2;
+                font-size: 25px;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+
+            #x{
+                direction: rtl;
+                background-color: #ddd;
+                font-size: 25px;
+                border: 20px solid #ddd;
+                margin: 0 10px;
+                margin-top: 20px;
+            }
+
+            #x-image{
+                display: flex;
+                justify-content: space-around;
+                height: 100px;
+            }
+
+            #x > p{
+                margin: 30px 0;
+            }
+
+            #x-image #img1, #img2, #img3{
+                height: 100%;
+            }
+
+            #x #x-image div{
+                display: inline;
+            }
+
+            #x #x-image div{
+                border: 1px solid #888;
+                border-radius: 5%;
+                text-align: center;
+                line-height: 2;
+                height: 100%;
+            }
+            
+            #x #x-image div button{
+                background-color: #0a8;
+            }
+
+            #rights{
+                width: 100%;
+                height: 50px;
+                background-color: #0a8;
+                text-align: center;
+                line-height: 3;
+                margin-top: 15%;
+            }
+        </style>
+    </head>
+    <body>
+        <!--final test-->
+        <div id="list">
+            <a href="file:///C:/ABDULRHMAN/My_programming_by_VS_Code/test.html" class="list-items">الرئيسية</a>
+            <a href="###" class="list-items">الدورات</a>
+            <a href="##" class="list-items">المقالات</a>
+            <a href="#" class="list-items">الملخصات</a>
+            <a href="####" class="list-items">المصادر</a>
+            <div id="title">
+                <h1>أكاديمو</h1>
+            </div>
+        </div>
+        <div style="height: 300px; overflow: hidden">
+            <img src="https://static.techspot.com/articles-info/1965/images/2020-01-05-image.jpg" alt="nothing" width="100%"/>
+        </div>
+        <div id="line"></div>
+        <img id="mid-image" src="API_icon.png" alt="nothing" width="100px"/>
+        <div id="attribute">
+            <div>أكاديمو لتعليم البرمجة</div>
+        </div>
+        <div id="attributes">
+            <p class="arbte">دورات عربية</p>
+            <p class="arbte">دورات مجانية</p>
+            <p class="arbte">دورات بجودة عالية</p>
+            <p class="arbte">شهادات معتمدة</p>
+        </div>
+        <div id="x">
+            <p>دوراتنا المتاحة</p>
+            <div id="x-image">
+                <img id="img1"src="html-course.png" alt="nothing"/>
+                <div>
+                    <p>سلسلة دروس الhtml</p>
+                    <button>مشاهدة</button>
+                </div>
+                <img id="img2"src="css-course.png" alt="nothing"/>
+                <div>
+                    <p>سلسلة دروس الcss</p>
+                    <button>مشاهدة</button>
+                </div>
+                <img id="img3"src="git-course.png" alt="nothing"/>
+                <div>
+                    <p>سلسلة دروس الGit</p>
+                    <button>مشاهدة</button>
+                </div>
+            </div>
+        </div>
+        <div id="rights">جميع الحقوق محفوظة-لأكاديمو 2022</div>
+    </body>
+</html>
